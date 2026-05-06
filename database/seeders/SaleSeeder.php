@@ -14,7 +14,7 @@ class SaleSeeder extends Seeder
      */
     public function run(): void
     {
-        $file = Storage::path('Dataset.csv');
+        $file = base_path('Dataset.csv');
         if (!file_exists($file)) {
             return;
         }
